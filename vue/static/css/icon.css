@@ -1,0 +1,36 @@
+/*scrollbar*/
+::-webkit-scrollbar {width: 10px;height: 10px;background-color: rgba(0,0,0,.2);-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+::-webkit-scrollbar-thumb {background-color: rgba(0,0,0,.5);-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+
+/*map*/
+.svg-wrap {width:800px;height:800px;position:relative;}
+.map {-webkit-transition: -webkit-transform .5s cubic-bezier(0,.45,.15,2);-webkit-transform-origin: 50% 50%;transition: transform .5s cubic-bezier(0,.45,.15,2);transform-origin: 50% 50%;cursor:pointer;}
+.map:hover {-webkit-transform: scale(1.05);transform: scale(1.05); }
+.f1 {font-size: 20px;}
+
+/*icon*/
+.icon{position: absolute;width: 32px;height: 82px;top: 44%;left: 45%;transform: translateX(-50%) translateY(-50%);}
+.icon .txt{background:url(../img/icon.png) no-repeat center center;width: 32px;height: 42px;position: absolute;top: 50%;left: 50%;cursor: pointer;
+  transform: translateX(-50%) translateY(-100%);z-index: 2;line-height: 32px;text-align: center;font-size: 14px;color: #fff;font-family: "微软雅黑";}
+.icon .alt{padding: 10px;background: rgba(0,0,0,0.5);border-radius: 5px;color: #fff;line-height: 25px;max-width: 300px;position: absolute;top: 10%;left: 140%;
+  display: none;}
+.icon em{width:15px;height:15px; top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);z-index: 1;
+  background:#00c4e2;border-radius: 50%;cursor:pointer;display:block;position:relative;}
+.icon em:after { content: ''; position: absolute; width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 0 1px 2px rgba(0,196,226,.5); 
+  top: 50%; left: 50%; margin-top: -25px; margin-left: -25px; z-index: 3; opacity: 0; -webkit-animation: halo 1s 0.5s infinite ease-out; 
+  -moz-animation: halo 1s 0.5s infinite ease-out; animation: halo 1s 0.5s infinite ease-out; }
+  @-webkit-keyframes halo { 0% { opacity: 0;-webkit-transform: scale(0.1); }
+50% {opacity: 1; }
+100%{opacity: 0;-webkit-transform: scale(1.2); } }
+@-moz-keyframes halo {0% { opacity: 0; -moz-transform: scale(0.1); }
+50% { opacity: 1; }
+100%{ opacity: 0; -moz-transform: scale(1.2); } }
+@-ms-keyframes halo {0% { opacity: 0; }
+50% { opacity: 1; }
+100%{opacity: 0; } }
+@-o-keyframes halo {0% { opacity: 0; -o-transform: scale(0.1); }
+50% {opacity: 1; }
+100%{ opacity: 0;-o-transform: scale(1.2); } }
+@keyframes halo {0% { opacity: 0; transform: scale(0.1); }
+50% {opacity: 1; }
+100%{opacity: 0;transform: scale(1.2); } }
